@@ -10,7 +10,7 @@ const stripe = new Stripe(process.env.STRIPE_PRIVATE_KEY);
 
 //midleware
 // app.use(cors({ origin: 'http://localhost:3000' }));
-app.use(cors({ origin: 'https://javierjcp-ecommerce.onrender.com' }));
+app.use(cors());
 app.use(express.json());
 
 //static
